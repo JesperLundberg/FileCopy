@@ -16,13 +16,6 @@ namespace FileCopy
                 return 1;
             }
 
-            //if (Path.IsPathRooted(args[1]) || Path.IsPathRooted(args[2]))
-            //{
-            //    Help("FullPath");
-
-            //    return 2;
-            //}
-
             CopyFiles(args[0], args[1], args[2]);
 
             return 0;
