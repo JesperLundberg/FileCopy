@@ -16,12 +16,12 @@ namespace FileCopy
                 return 1;
             }
 
-            if (Path.IsPathRooted(args[0]) || Path.IsPathRooted(args[1]) || Path.IsPathRooted(args[2]))
-            {
-                Help("FullPath");
+            //if (Path.IsPathRooted(args[1]) || Path.IsPathRooted(args[2]))
+            //{
+            //    Help("FullPath");
 
-                return 2;
-            }
+            //    return 2;
+            //}
 
             CopyFiles(args[0], args[1], args[2]);
 
@@ -33,8 +33,8 @@ namespace FileCopy
             switch (flag)
             {
                 case "Usage":
-                    Console.WriteLine("Usage: filecopy [full path of filelist to copy] [full path to copy to]");
-                    Console.WriteLine(@"Example: filecopy c:\folder\files_to_copy\filestocopy.txt d:\folder\copied_files");
+                    Console.WriteLine("Usage: filecopy [full path to textfile with list of files to copy] [full path of filelist to copy] [full path to copy to]");
+                    Console.WriteLine(@"Example: filecopy filetocopy.txt c:\folder\files d:\folder\copied_files");
                     Console.WriteLine("/?\tShow help.");
                     break;
                 case "FullPath":
