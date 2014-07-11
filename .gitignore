@@ -15,8 +15,8 @@ $RECYCLE.BIN/
 *.msp
 
 # Ignore folders
-./bin
-./obj
+FileCopy/bin/
+FileCopy/obj/
 
 # =========================
 # Operating System Files
